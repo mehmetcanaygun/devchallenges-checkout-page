@@ -264,3 +264,59 @@ footer p a {
   text-decoration: none;
   color: #a9a9a9;
 }
+
+@media (max-width: 768px) {
+  body {
+    padding: 40px 20px;
+  }
+  .page-title {
+    font-size: 24px;
+  }
+  .sub-title {
+    font-size: 14px;
+  }
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .cart-wrapper .shipping-cost,
+  .cart-wrapper .total-cost {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  .product-wrapper .img {
+    width: 124px;
+    height: 124px;
+  }
+  .product-wrapper .info h4 {
+    font-size: 12px;
+  }
+  .product-wrapper .info .cost {
+    font-size: 12px;
+  }
+  .product-wrapper .info .cost span {
+    font-size: 10px;
+  }
+  .product-wrapper .info .amount-box {
+    width: 122px;
+    height: 50px;
+    padding: 0 10px;
+  }
+  .input-group label {
+    font-size: 10px;
+  }
+  .input-group div {
+    margin-top: 5px;
+    height: 40px;
+  }
+  .input-group div i {
+    font-size: 1.2rem;
+    margin-right: 12px;
+  }
+}
