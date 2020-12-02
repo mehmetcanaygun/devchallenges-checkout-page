@@ -3,8 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>DevChallenges | Checkout Page</title>
   </head>
-  <body></body>
+  <body>
+    <h1 class="page-title">Checkout</h1>
+    <div class="grid">
+      <div class="col">
+        <div class="info-group">
+          <h3 class="sub-title">Contact information</h3>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <div>
+              <i class="material-icons">email</i>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email..."
+              />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="phone">Phone</label>
+            <div>
+              <i class="material-icons">phone</i>
+              <input type="text" id="phone" placeholder="Enter your phone..." />
+            </div>
+          </div>
+        </div>
+        <div class="info-group">
+          <h3 class="sub-title">Shipping address</h3>
+          <div class="input-group">
+            <label for="name">Full name</label>
+            <div>
+              <i class="material-icons">account_circle</i>
+              <input type="text" id="name" placeholder="Your name..." />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="address">Address</label>
+            <div>
+              <i class="material-icons">home</i>
+              <input type="text" id="address" placeholder="Your address..." />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="city">City</label>
+            <div>
+              <i class="material-icons">business</i>
+              <input type="text" id="city" placeholder="Your city..." />
+            </div>
+          </div>
+          <div class="input-grid">
+            <div class="input-group">
+              <label for="country">Country</label>
+              <div>
+                <i class="material-icons">public</i>
+                <select id="country">
+                  <option>US</option>
+                  <option>UK</option>
+                  <option>TR</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="postal-code">Postal code</label>
+              <div>
+                <i class="material-icons">markunread_mailbox</i>
+                <input
+                  type="text"
+                  id="postal-code"
+                  placeholder="Your postal code..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="save-box">
+            <label>
+              <input type="checkbox" /> Save this information for next time
+            </label>
+          </div>
+        </div>
+        <button class="continue-btn">Continue</button>
+      </div>
+      <div class="col">
+        <div class="cart-wrapper">
+          <div class="product-wrapper">
+            <div class="img"></div>
+            <div class="info">
+              <h4>Vintage Backbag</h4>
+              <p>$54.99 <span>$94.99</span></p>
+              <div class="amount-box">
+                <button class="minus-button">-</button>
+                <p class="amount">1</p>
+                <button class="plus-button">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-wrapper">
+            <div class="img"></div>
+            <div class="info">
+              <h4>Levi Shoes</h4>
+              <p>$74.99 <span>$124.99</span></p>
+              <div class="amount-box">
+                <button class="minus-button">-</button>
+                <p class="amount">1</p>
+                <button class="plus-button">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="shipping-cost">
+            <p>Shipping</p>
+            <p>$19</p>
+          </div>
+          <div class="total-cost">
+            <p>Total</p>
+            <p>$148.98</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
