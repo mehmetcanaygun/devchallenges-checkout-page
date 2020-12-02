@@ -64,9 +64,9 @@
               <div>
                 <i class="material-icons">public</i>
                 <select id="country">
-                  <option>US</option>
-                  <option>UK</option>
-                  <option>TR</option>
+                  <option value="US" selected="selected">US</option>
+                  <option value="UK">UK</option>
+                  <option value="TR">TR</option>
                 </select>
               </div>
             </div>
@@ -88,7 +88,7 @@
             </label>
           </div>
         </div>
-        <button class="continue-btn">Continue</button>
+        <button id="continue-btn" class="continue-btn">Continue</button>
       </div>
       <div class="col">
         <div class="cart-wrapper">
@@ -98,9 +98,9 @@
               <h4>Vintage Backbag</h4>
               <p class="cost">$54.99 <span>$94.99</span></p>
               <div class="amount-box">
-                <button class="minus-button">-</button>
-                <p class="amount">1</p>
-                <button class="plus-button">+</button>
+                <button class="minus-btn">-</button>
+                <p class="amount" data-cost="54.99">1</p>
+                <button class="plus-btn">+</button>
               </div>
             </div>
           </div>
@@ -110,9 +110,9 @@
               <h4>Levi Shoes</h4>
               <p class="cost">$74.99 <span>$124.99</span></p>
               <div class="amount-box">
-                <button class="minus-button">-</button>
-                <p class="amount">1</p>
-                <button class="plus-button">+</button>
+                <button class="minus-btn">-</button>
+                <p class="amount" data-cost="74.99">1</p>
+                <button class="plus-btn">+</button>
               </div>
             </div>
           </div>
@@ -122,7 +122,7 @@
           </div>
           <div class="total-cost">
             <p>Total</p>
-            <p>$148.98</p>
+            <p id="total-cost-output"></p>
           </div>
         </div>
       </div>
